@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
-import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -100,7 +99,7 @@ export default function Landing() {
           <nav className="nav nav2">
             <li href="#Speaker">Speaker's</li>
             <li href="#Partner">Partner's</li>
-            <li href="#Sponcers">Sponser's</li>
+            <li href="#Sponcers">Sponsor's</li>
             <li href="#QandA">Q & A</li>
           </nav>
           <div className="content">

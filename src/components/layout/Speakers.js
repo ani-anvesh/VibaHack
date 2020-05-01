@@ -9,7 +9,7 @@ export default function Speakers() {
       </div>
       <Grid container xs={12}>
         <Grid className="l1" item xs={4}>
-          <h1>COMMING</h1>
+          <h1>COMING</h1>
         </Grid>
         <Grid className="r1" item xs={8}>
           <h1>SOON>>></h1>

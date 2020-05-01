@@ -234,12 +234,25 @@ li:hover {
   letter-spacing: 7px;
   display: block;
 }
-.gfon {
+.gfon,
+.gfon > h1 {
+  margin-bottom: "9vh 0vh";
   text-align: center;
   font-family: "Anton", sans-serif;
   font-size: 2em;
   letter-spacing: 9px;
   color: #ff9f1c;
+}
+.imag {
+  width: 50%;
+  height: 70%;
+  object-fit: contain;
+  object-position: center;
+}
+.example {
+  padding: 5vh 0;
+  height: 100%;
+  width: 100%;
 }
 .example::-webkit-scrollbar {
   display: none;

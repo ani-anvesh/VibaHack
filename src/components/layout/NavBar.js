@@ -18,7 +18,7 @@ const NavBar = (props) => {
             <li href="#About">About</li>
             <li href="#Speaker">Speaker's</li>
             <li href="#Partner">Partner's</li>
-            <li href="#Sponcers">Sponser's</li>
+            <li href="#Sponcors">Sponser's</li>
             <li href="#QandA">Q & A</li>
           </nav>
         </Grid>

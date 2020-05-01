@@ -6,11 +6,12 @@ import GridListTileBar from "@material-ui/core/GridListTileBar";
 import IconButton from "@material-ui/core/IconButton";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import Image1 from "./images/1.jpeg";
-import Image2 from "../layout/images/2.png";
-import image3 from "../layout/images/3.png";
-import image4 from "../layout/images/4.png";
-import image5 from "../layout/images/5.PNG";
+import Image2 from "./images/2.png";
+import Image3 from "./images/3.png";
+import Image4 from "./images/4.png";
+import Image5 from "./images/5.PNG";
 import "./layout.css";
+import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     transform: "translateZ(0)",
   },
   title: {
-    color: theme.palette.primary.light,
+    color: "#FFFFFF",
   },
   titleBar: {
     background:
@@ -38,36 +39,38 @@ export default function SingleLineGridList() {
   const classes = useStyles();
 
   const tiles = [
-    { title: "Smiles Foundation", img: { Image1 } },
-    { title: "EdXenos", img: { Image2 } },
-    { title: "Launch Space", img: { image3 } },
-    { title: "Skill Ship Foundation", img: { image4 } },
-    { title: "OutShade", img: { image5 } },
+    { title: "Smiles Foundation", img: Image1 },
+    { title: "EdXenos", img: Image2 },
+    { title: "Launch Space", img: Image3 },
+    { title: "Skill Ship Foundation", img: Image4 },
+    { title: "OutShade", img: Image5 },
   ];
   return (
-    <div className={classes.root} className="example">
-      <div className="gfon">
-        <h1>Our Partners</h1>
+    <Grid container xs={12} style={{ overflow: "hidden" }}>
+      <div className={classes.root} className="example">
+        <div className="gfon">
+          <h1>Our Partners</h1>
+        </div>
+        <GridList className={classes.gridList} cols={4.5}>
+          {tiles.map((tile) => (
+            <GridListTile>
+              <img className="imag" src={tile.img} alt={tile.title} />
+              <GridListTileBar
+                title={tile.title}
+                classes={{
+                  root: classes.titleBar,
+                  title: classes.title,
+                }}
+                actionIcon={
+                  <IconButton aria-label={`star ${tile.title}`}>
+                    <StarBorderIcon className={classes.title} />
+                  </IconButton>
+                }
+              />
+            </GridListTile>
+          ))}
+        </GridList>
       </div>
-      <GridList className={classes.gridList} cols={2.5}>
-        {tiles.map((tile) => (
-          <GridListTile>
-            <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              classes={{
-                root: classes.titleBar,
-                title: classes.title,
-              }}
-              actionIcon={
-                <IconButton aria-label={`star ${tile.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
-            />
-          </GridListTile>
-        ))}
-      </GridList>
-    </div>
+    </Grid>
   );
 }
