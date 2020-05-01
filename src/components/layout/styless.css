@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.anna {
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.ab {
+  width: 100%;
+  height: 100%;
+  background-image: url(./38.png);
+  background-position: center;
+  background-size: cover;
+}

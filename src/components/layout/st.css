@@ -1,0 +1,62 @@
+.about {
+  width: 100%;
+  height: 61vh;
+}
+.cont {
+  padding: 5vh;
+}
+.cont > h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 4em;
+  color: #ff9f1c;
+  letter-spacing: 18px;
+  justify-content: center;
+}
+.cont > b {
+  font-family: "Merriweather", serif;
+  font-size: 1em;
+  color: #555;
+  letter-spacing: 7px;
+  text-align: center;
+}
+.cont > p {
+  margin-top: 3vh;
+  font-size: 0.7em;
+  color: #555;
+  letter-spacing: 5px;
+  line-height: 18px;
+  justify-content: center;
+}
+.imge {
+  width: 100%;
+  height: 70vh;
+  background-image: url(./images/45.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+
+@media only screen and (max-width: 1080px) {
+  * {
+    font-size: 18px;
+  }
+
+  .cont > p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  * {
+    font-size: 9px;
+  }
+  .about {
+    height: 41vh;
+  }
+  .cont > p {
+    display: none;
+  }
+  .imge {
+    margin-top: 7vh;
+  }
+}

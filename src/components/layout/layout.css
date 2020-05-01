@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: "21px";
+}
+.main {
+  padding: 7vh;
+  padding-bottom: 3vh;
+  background-color: #fff;
+}
+.right {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: #ff9f1c;
+}
+.left {
+  position: relative;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-color: #ffffff;
+}
+.font {
+  position: absolute;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 4em;
+  letter-spacing: 9px;
+  color: #ff9f1c;
+}
+.titleM {
+  top: 30%;
+  right: 0;
+  font-size: 2em;
+}
+
+.nav {
+  margin: 16px;
+  justify-items: center;
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+  float: right;
+}
+li {
+  font-family: "Merriweather", serif;
+  list-style: none;
+  margin: 9px;
+  padding: 0 18px;
+  font-weight: 720;
+  cursor: pointer;
+}
+li:hover {
+  color: #ff9f1c;
+}
+
+.nav2 {
+  color: #ffffff;
+}
+.nav2 > li:hover {
+  color: #555;
+}
+.title {
+  position: absolute;
+  top: 34.8vh;
+  left: 3%;
+  color: #ffffff;
+  font-size: 6em;
+}
+
+.cardM {
+  position: absolute;
+  top: 61vh;
+  right: 0;
+  z-index: 3;
+  width: 70vw;
+  height: 13vh;
+  background-color: transparent;
+  border-right: 0px solid transparent;
+  border-left: 95px solid transparent;
+  border-bottom: 13vh solid #555;
+}
+
+#main {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  z-index: 5;
+  overflow-y: hidden;
+  transition: height 0.5s;
+}
+.image {
+  margin-top: 14em;
+  margin-left: -7em;
+  border-radius: 9px;
+  width: 351px;
+  height: 99px;
+  background-image: url(./fullLogo.png);
+  background-size: cover;
+  background-position: center;
+  transform: rotate(-90deg);
+}
+.navL {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.navM {
+  padding-top: 5em;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  display: block;
+}
+.navM li {
+  color: #555;
+  font-size: 2em;
+  line-height: 3em;
+  opacity: 1;
+  transition: 0.3s;
+}
+.navM li:hover {
+  color: #ff9f1c;
+}
+.navM1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #555;
+  opacity: 0.7;
+  z-index: 7;
+}
+.content {
+  color: #ffffff;
+  width: 70%;
+  top: 54vh;
+  height: 30vh;
+  left: 3;
+  letter-spacing: 5px;
+  line-height: 1.4em;
+  font-weight: lighter;
+  position: absolute;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  justify-content: start;
+}
+.section {
+  animation-name: grid1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes grid1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nav {
+  animation-name: grid2;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes grid2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.icons {
+  color: #ff9f1c;
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: -3%;
+}
+.speak {
+  margin-top: 5px;
+  max-width: 100%;
+  height: 59vh;
+  position: relative;
+  margin: 5vh;
+  background-color: #cbf3f0;
+}
+.head {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  margin: 1vh;
+  font-size: 2vh;
+}
+.r1 {
+  max-width: 100%;
+  height: 59vh;
+  text-align: start;
+  background-color: #ff9f1c;
+}
+.l1 {
+  max-width: 100%;
+  height: 59vh;
+  color: #ff9f1c;
+  text-align: end;
+  justify-content: center;
+}
+.l1 > h1,
+.r1 > h1 {
+  margin-top: 27vh;
+}
+.contact {
+  height: 70vh;
+  width: 100%;
+  text-align: center;
+}
+.contact > h1 {
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-size: 7vh;
+  margin-top: 9vh;
+  letter-spacing: 1vh;
+}
+.contact > span {
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-size: 3vh;
+  margin-top: 3vh;
+  letter-spacing: 7px;
+  display: block;
+}
+.gfon {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+  letter-spacing: 9px;
+  color: #ff9f1c;
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 1080px) {
+  * {
+    font-size: 18px;
+  }
+  .main {
+    padding: 2vh;
+  }
+  .font {
+    font-size: 3em;
+  }
+  .titleM {
+    font-size: 1.4em;
+  }
+  .nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 760px) {
+  * {
+    font-size: 9px;
+  }
+  .image {
+    margin-left: -3vh;
+    height: 79px;
+    width: 88px;
+  }
+  .main {
+    padding: 2vh;
+    height: 100vh;
+  }
+  .font {
+    font-size: 2em;
+  }
+  .titleM {
+    font-size: 2em;
+    transform: rotate(-45deg);
+    left: 0;
+    top: 50%;
+  }
+  .nav {
+    display: none;
+  }
+  .content {
+    left: 1vh;
+  }
+  .speak {
+    height: 32vh;
+  }
+  .r1 {
+    height: 32vh;
+  }
+  .l1 > h1,
+  .r1 > h1 {
+    margin-top: 16vh;
+  }
+  .head {
+    font-size: 4vh;
+  }
+  .contact > h1 {
+    font-family: "Anton", sans-serif;
+    color: white;
+    font-size: 2em;
+    margin-top: 9vh;
+    letter-spacing: 9px;
+  }
+  .contact > span {
+    font-family: "Anton", sans-serif;
+    color: white;
+    font-size: 1em;
+    margin-top: 3vh;
+    letter-spacing: 4px;
+    display: block;
+  }
+  .gfon > h1 {
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-size: 2em;
+    letter-spacing: 4px;
+    color: #ff9f1c;
+  }
+}
