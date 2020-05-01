@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea27cb22d6cc1a361a7a8db62e595f24",
+    "revision": "60495f9b18d7d22d9d5b5df54b0d15fc",
     "url": "/VibaHack/index.html"
   },
   {
-    "revision": "2f430bf14c2cf24b2580",
-    "url": "/VibaHack/static/css/main.126bfb88.chunk.css"
+    "revision": "f08c7ca3c2653ce8b42d",
+    "url": "/VibaHack/static/css/main.e79b3dcf.chunk.css"
   },
   {
-    "revision": "8ffd0dce6aa8725f46c8",
-    "url": "/VibaHack/static/js/2.4e227861.chunk.js"
+    "revision": "fe7ab9ec15e918654af9",
+    "url": "/VibaHack/static/js/2.bf400b31.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/VibaHack/static/js/2.4e227861.chunk.js.LICENSE.txt"
+    "url": "/VibaHack/static/js/2.bf400b31.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2f430bf14c2cf24b2580",
-    "url": "/VibaHack/static/js/main.75ccbab4.chunk.js"
+    "revision": "f08c7ca3c2653ce8b42d",
+    "url": "/VibaHack/static/js/main.d1f1fd58.chunk.js"
   },
   {
     "revision": "98bdb5598932b4ea957a",
